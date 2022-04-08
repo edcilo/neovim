@@ -32,11 +32,14 @@ nnoremap <S-f> :NERDTreeFind<CR>
 
 " FZF mapping
 " show files in buffer
-nnoremap <C-b> :Buffers<CR>
+" nnoremap <C-b> :Buffers<CR>
+nnoremap <C-b> <cmd>Telescope buffers<cr>
 " search file in workdir
-nnoremap <C-p> :Files<CR>
+" nnoremap <C-p> :Files<CR>
+nnoremap <C-p> <cmd>Telescope find_files find_command=rg,--ignore,--hidden,--files<cr>
 " search regex in files
-nnoremap <C-f> :Ag<CR>
+" nnoremap <C-f> :Ag<CR>
+nnoremap <C-f> <cmd>Telescope live_grep<cr>
 " show files modified in git
 nnoremap <C-g> :GFiles?<CR>
 " show commits

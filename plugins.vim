@@ -30,6 +30,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'https://github.com/editorconfig/editorconfig-vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 Plug 'https://github.com/mhinz/vim-signify'
 Plug 'https://github.com/Yggdroot/indentLine'
 " Plug 'https://github.com/preservim/tagbar'
