@@ -11,8 +11,8 @@ nnoremap <C-q> :Sayonara<CR>
 nnoremap <C-a> gg<S-v>G
 
 " Tabs
-nnoremap <S-Tab> :tabprev<Return>
-nnoremap <Tab> :tabnext<Return>
+nnoremap <S-Tab> :BufferLineCyclePrev<Return>
+nnoremap <Tab> :BufferLineCycleNext<Return>
 " vnoremap < <gv
 " vnoremap > >gv
 
@@ -21,13 +21,13 @@ nnoremap <Tab> :tabnext<Return>
 " nnoremap <M-h> :vertical resize -2<CR>
 " nnoremap <M-l> :vertical resize +2<CR>
 
-nnoremap <S-c> :Commentary<CR>
-vnoremap <S-c> :Commentary<CR>
+nnoremap <S-c> :CommentToggle<CR>
+vnoremap <S-c> :CommentToggle<CR>
 
 " nnoremap <S-r> :NERDTreeFocus<CR>
 " nnoremap <S-n> :NERDTree<CR>
-nnoremap <S-t> :NERDTreeToggle<CR>
-nnoremap <S-f> :NERDTreeFind<CR>
+nnoremap <leader>t :NERDTreeToggle<CR>
+nnoremap <leader>o :NERDTreeFind<CR>
 
 
 " FZF mapping
@@ -40,12 +40,13 @@ nnoremap <C-p> <cmd>Telescope find_files find_command=rg,--ignore,--hidden,--fil
 " search regex in files
 " nnoremap <C-f> :Ag<CR>
 nnoremap <C-f> <cmd>Telescope live_grep<cr>
+nnoremap <S-s> <cmd>Telescope colorscheme<cr>
 " show files modified in git
-nnoremap <C-g> :GFiles?<CR>
+nnoremap <C-g> :Telescope git_status<CR>
 " show commits
-nnoremap <C-c> :Commits<CR>
+nnoremap <C-c> :Telescope git_commits<CR>
 
 
 " nnoremap <C-k> :FloatermNew<CR> 
-nnoremap <C-t> :FloatermNew --autoclose=2<CR>
-
+" nnoremap <C-t> :FloatermNew --autoclose=2<CR>
+nnoremap <C-t> :ToggleTerm size=10 direction=horizontal<CR>

@@ -6,6 +6,7 @@ let NERDTreeWinSize=20
 let NERDTreeWinPos="left"
 let NERDTreeStatusline=''
 let NERDTreeMinimalUI=1
+let NERDTreeQuitOnOpen=1
 
 " Start NERDTree and put the cursor back in the other window.
 " autocmd VimEnter * NERDTree | wincmd p

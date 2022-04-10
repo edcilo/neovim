@@ -1,5 +1,9 @@
 syntax enable
 
+let mapleader = ","
+let timeoutlen = 100
+set showcmd
+
 :set encoding=utf-8
 :set fileencoding=utf-8
 :set hidden
@@ -12,6 +16,7 @@ syntax enable
 :set t_Co=256
 :set conceallevel=0
 :set clipboard=unnamedplus
+:set termguicolors
 
 if has("nvim-0.5.0") || has("patch-8.1.1564")
   set signcolumn=number
