@@ -8,6 +8,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " Plug 'https://github.com/rafi/awesome-vim-colorschemes'
 Plug 'https://github.com/ryanoasis/vim-devicons'
 Plug 'kyazdani42/nvim-web-devicons'
+Plug 'ayu-theme/ayu-vim'
 
 " Status bar
 " " Plug 'https://github.com/vim-airline/vim-airline'
@@ -67,6 +68,8 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
 Plug 'ray-x/lsp_signature.nvim'
+Plug 'rafamadriz/friendly-snippets'
+
 
 
 " " Git
