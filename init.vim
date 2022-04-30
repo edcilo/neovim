@@ -22,6 +22,7 @@ source $HOME/.config/nvim/plug-config/cmp.vim
 source $HOME/.config/nvim/plug-config/lspconfig.vim
 
 
+source $HOME/.config/nvim/shortcuts.vim
 source $HOME/.config/nvim/mappings.vim
 
 
