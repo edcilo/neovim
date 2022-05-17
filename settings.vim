@@ -1,68 +1,72 @@
+" https://neovim.io/doc/user/syntax.html
 syntax enable
 
-let mapleader = ","
-let timeoutlen = 100
-set showcmd
 
-:set encoding=utf-8
-:set fileencoding=utf-8
-:set hidden
-:set nobackup
-:set nowritebackup
-:set nocompatible
-:set updatetime=300
-:set timeoutlen=100
-:set shortmess+=c
-:set t_Co=256
-:set conceallevel=0
-:set clipboard=unnamedplus
-:set termguicolors
-
-if has("nvim-0.5.0") || has("patch-8.1.1564")
-  set signcolumn=number
-else
-  set signcolumn=yes
-endif
-
-:set number			" enable numbers
-:set numberwidth=4		" gutter between numbers
-:set relativenumber		" enable relative number
-:set mouse=a			" enable mouse support on vim
-:set clipboard=unnamed
-:set cc=72,+7
-:set ruler
-:set showcmd
-:set cmdheight=2
+" https://neovim.io/doc/user/options.html
+:set autoindent
 :set cursorline
-:set showmatch
-:set laststatus=2
-:set background=dark
-:set formatoptions-=cro
-
 :set expandtab
-:set autoindent
-:set shiftwidth=4
-:set tabstop=4
-:set smarttab
-:set smartindent
-:set autoindent
-:set softtabstop=4
-
+:set hidden
 :set hlsearch
 :set incsearch
-:set ignorecase
-:set smartcase
+:set nobackup
 :set nowrap
-
+:set nowritebackup
+:set number
+:set relativenumber
+:set ruler
+:set showcmd
+:set showmatch
+:set smartcase
+:set smartindent
+:set smarttab
 :set splitbelow
 :set splitright
+:set termguicolors
+:set background=dark
+" :set clipboard=unnamedplus
+:set cmdheight=1
+:set colorcolumn=72,+7
+" :set conceallevel=0
+:set encoding=utf8
+:set fileencoding=utf8
+:set formatoptions-=cro
+:set ignorecase
+:set laststatus=2
+:set mouse=a
+:set numberwidth=4
+:set pumblend=5
+:set shiftwidth=4
+" :set shortmess+=c
+:set signcolumn=yes
+:set softtabstop=4
+:set tabstop=4
+:set timeoutlen=1000
+:set updatetime=4000
+:set wildoptions=pum
+:set winblend=0
 
-au! BufWritePost $MYVIMRC source %  " auto source when writting to init.vim
 
-" add folding code for python
+" https://neovim.io/doc/user/map.html
+let mapleader = ","
+
+
+" https://neovim.io/doc/user/fold.html
 :set foldmethod=indent
-nnoremap <space> za
-vnoremap <space> zf
+:set foldlevel=20
 
-" vim-polyglot: disable markdown 
-let g:polyglot_disabled = ["markdown"]
+
+" auto source when writting to init.vim
+au! BufWritePost $MYVIMRC source %
+
+
+" https://neovim.io/doc/user/provider.html
+" Command to start Python 3 (executable, not directory). 
+let g:python3_host_prog    = '/opt/homebrew/bin/python3'
+" Command to start the Ruby host.
+let g:ruby_host_prog       = '/usr/local/bin/neovim-ruby-host'
+" let g:ruby_host_prog       = '/usr/bin/ruby'
+" Command to start the Node.js host.
+let g:node_host_prog       = '/Users/edcilo/.nvm/versions/node/v17.3.0/lib/node_modules/neovim/bin/cli.js'
+" To disable Perl support
+let g:loaded_perl_provider = 0

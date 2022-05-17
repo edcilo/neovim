@@ -1,5 +1,9 @@
 # VIM documentation
 
+## Configuration
+
+Run `:checkhealth` into neovim
+
 ## Commands
 
 [Vim Airline Themes](https://github.com/vim-airline/vim-airline-themes)

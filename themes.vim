@@ -1,26 +1,23 @@
 if exists( "&termguicolors" ) && exists( "&winblend" )
-  syntax enable
-  set termguicolors
-  set winblend=0
-  set wildoptions=pum
-  set pumblend=5
-  set background=dark
+  "  let g:airline_theme='solarized_flood'
 
-  " Theme
-  let g:neosolarized_termtrans=0.5
-  let g:neosolarized_contrast=1
-  let g:neosolarized_termBoldAsBright=0
+  " vim theme
+  "  let g:neosolarized_contrast='high'
+  "  let g:neosolarized_diffmode='normal'
+  "  let g:neosolarized_termBoldAsBright=0
+  "  let g:neosolarized_termtrans=1
+  "  let g:neosolarized_vertSplitBgTrans=1
+  "  let g:neosolarized_visibility='high'
+  "  colorscheme NeoSolarized
 
-  " let ayucolor="light"  " for light version of theme
-  " let ayucolor="mirage" " for mirage version of theme
-  let ayucolor="dark"   " for dark version of theme
+  let ayucolor="dark"   " colors: light | mirage | dark
   colorscheme ayu
 
-  " let g:airline_theme='solarized_flood'
-  " runtime ./colors/NeoSolarized.vim
-  " colorscheme NeoSolarized
-
-  " colorscheme atom
-  " colorscheme OceanicNext 
+  "  colorscheme afterglow
+  "  colorscheme anderson
+  "  colorscheme gruvbox
+  "  colorscheme lucario
+  "  colorscheme PaperColor
+  "  colorscheme vim-material
 endif
 
